@@ -1,0 +1,26 @@
+{
+  "name": "gtav-vehicle-stats",
+  "version": "0.1.0",
+  "authors": [
+    "Jono Warren <jono@nmecdesign.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "ember": "~1.5.0",
+    "ember-data": "1.0.0-beta.7",
+    "ember-data-sails-adapter": "~2.0.0",
+    "handlebars": "~1.3.0",
+    "foundation": "~5.2.2"
+  },
+  "resolutions": {
+    "ember": "~1.5.0"
+  }
+}

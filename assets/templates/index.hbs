@@ -1,0 +1,50 @@
+<div class="row">
+	<div class="small-12 medium-6 columns">{{input type="text" value=searchText placeholder="Search"}}</div>
+</div>
+
+<section class="vehicles">
+	<header class="vehicle-header row">
+		<div class="small-2 columns">
+			<a {{action 'sort' 'manufacturer'}}>Manufacturer</a>
+		</div>
+		<div class="small-2 columns">
+			<a {{action 'sort' 'name'}}>Name</a>
+		</div>
+		<div class="small-2 columns">
+			<a {{action 'sort' 'class'}}>Class</a>
+		</div>
+		<div class="small-1 columns">
+			<a {{action 'sort' 'speed'}}>Speed</a>
+		</div>
+		<div class="small-1 columns">
+			<a {{action 'sort' 'braking'}}>Braking</a>
+		</div>
+		<div class="small-2 columns">
+			<a {{action 'sort' 'acceleration'}}>Acceleration</a>
+		</div>
+		<div class="small-1 columns">
+			<a {{action 'sort' 'traction'}}>Traction</a>
+		</div>
+		<div class="small-1 columns">
+			<a {{action 'sort' 'value'}}>Value</a>
+		</div>
+	</header>
+	{{#if arrangedContent}}
+		{{#each arrangedContent}}
+			<article class="vehicle row">
+				<div class="vehicle-cell small-2 columns"><p>{{manufacturer}}</p></div>
+				<div class="vehicle-cell small-2 columns"><p>{{name}}</p></div>
+				<div class="vehicle-cell small-2 columns"><p>{{class}}</p></div>
+				<div class="vehicle-cell small-1 columns"><p>{{speed}}</p></div>
+				<div class="vehicle-cell small-1 columns"><p>{{braking}}</p></div>
+				<div class="vehicle-cell small-2 columns"><p>{{acceleration}}</p></div>
+				<div class="vehicle-cell small-1 columns"><p>{{traction}}</p></div>
+				<div class="vehicle-cell small-1 columns"><p>${{value}}</p></div>
+			</article>
+		{{/each}}
+	{{else}}
+		<div class="error-404">
+			<h3>Not found</h3>
+		</div>
+	{{/if}}
+</section>

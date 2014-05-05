@@ -1,0 +1,22 @@
+.vehicle-header,
+.vehicle.row {
+	padding: 0.5em 0;
+}
+
+.vehicle-header a {
+	font-weight: bold;
+}
+
+.vehicle p {
+	margin: 0.1em 0;
+}
+
+.vehicle.row:nth-child(even) {
+	background: #f3f3f3;
+}
+
+.loading,
+.error-404 {
+	text-align: center;
+	margin: 1em 0;
+}
